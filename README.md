@@ -9,17 +9,29 @@ DATE: 28-04-2026
 [![Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@aryanmalto9/nessus-installation-configuration-9d8ab0582631?sharedUserId=aryanmalto9)
 
 Nessus is a powerful tool from Tenable that can scan networks, operating systems, databases and applications for vulnerabilities.
+
 It provides detailed reports on security weaknesses and prioritizes them based on their severity.
+
 It scans and looks for bad configuration, missing patches and CVEs (Common Vulnerabilities and Exposures) and is often used in security assessments and penetration testing.
+
 Nessus is compatible with many platforms and operating systems, including:
+
 •	Linux
+
 •	Debian
+
 •	Fedora
+
 •	FreeBSD
+
 •	MacOS
+
 •	Red Hat
+
 •	SUSE
+
 •	Windows and Windows Server
+
 Nessus offers two paid tiers, Professional and Expert, which come with extra features and capabilities, as well as a free Essentials version.
 
 Nessus Essentials: This free version of Nessus is intended for educators, students, and individuals. You can use this tool to scan up to 16 private IP addresses.
@@ -31,7 +43,7 @@ How to Install Nessus on Kali Linux
 
 This section will guide you through the process of downloading, installing and running Nessus Essentials on Kali Linux. Nessus does not come pre-installed in Kali and you have to download it from the Nessus website.
 
-Download Nessus
+## Download Nessus
 
 To download Nessus, visit the download page and select the Linux-Debian-amd64.
 
@@ -58,13 +70,13 @@ On the next screen, enter your name and email address and click “Register” t
  
 On the next screen, you need to create a Nessus admin account, which will be used to log into Nessus.
  
-Nessus will now start downloading the plugins.
+## Nessus will now start downloading the plugins.
  
 Once the process is complete, you will be taken to the Nessus dashboard.
 From here, Nessus will start setting up the plugins, which will take some time to complete. So grab a coffee and relax while Nessus does his thing.
  
 
-Launch Nessus
+## Launch Nessus
 
 To start Nessus, use the command:
 sudo systemctl start nessusd. service
@@ -112,16 +124,21 @@ Run Nessus
 
 Now we’ll show you how to use Nessus in Kali to perform a scan against a target within your network. But first, let’s briefly describe some of the key sections of the Nessus Essentials interface.
 
-Press enter or click to view image in full size
+## Press enter or click to view image in full size
  
 •	My Scans: Displays and manages scheduled and startup scans. You can import results, create scan folders or start scans.
+
 •	Settings: Check Nessus version details and plugin information, configure plugin updates, permissions, proxies, SMTP servers and more.
+
 •	Policies: Create custom templates that control scan actions and plugin behaviors.
+
 •	Plugin Rules: Customize how plugins work during scans.
+
 •	Terrascan: Terrascan checks infrastructure code for security issues.
+
 •	Notifications and Account: Manage account settings and scan notifications.
 
-Nessus scan
+## Nessus scan
 
 Let’s start scanning our target. The first step is to click “Create a new scan.”
  
@@ -136,7 +153,9 @@ The next important setting is Discovery, where you configure port scanning behav
 For our demonstration, we will select “Port scan (all ports).”
  
 The next setting you need to set is under Assessment, where you will select the type of scan you want.
+
  “default,” “scan for known web vulnerabilities,” “scan for all web vulnerabilities (quick),” “scan for all web vulnerabilities (complex),” ή “custom.”
+ 
 For our demonstration, we will select “Scan for known web vulnerabilities.”
 
  
@@ -159,14 +178,24 @@ Now, we can look at the vulnerabilities found in the scan results.
  
  
 Here is a breakdown of the various sections of the results page.
+
+
 •	hosts: Shows the number of hosts scanned, which is one in our case.
+
 •	Vulnerabilities: The total number of vulnerabilities found.
+
 •	Remediations: Suggests the number of recommended remedial actions.
+
 •	Notes: A note that provides additional information about the scan.
+
 •	History: Indicates that there is a historical record of this scan.
+
 •	Host IP Address (192.168.37.144): The specific IP address of the scanned host.
+
 •	Vulnerability Severity Bars: Represents the number of vulnerabilities by severity — Critical (39), High (35), Medium (52), Low (7), and Info (211).
+
 •	Scan Details Section: Provides details on the scan policy used, scan status, base severity (CVSS v3.0), scanner type (Local Scanner), start and end time, and total scan duration (25 minutes).
+
 •	Vulnerabilities Pie Chart: Representation of vulnerabilities categorized by severity — Critical, High, Medium, Low, and Info.
 
 To see the vulnerabilities in detail, click on the “Vulnerabilities” tab. This lists all detected vulnerabilities, which can be filtered by severity, CVSS score, VPR rating, name, family or number.
@@ -187,11 +216,10 @@ Click the “Report” button from the scan results to configure your report. Yo
 
 You can also choose the reference template. Once done, click “Generate Report.”
 
- 
 The report will be generated and downloaded to your system.
  
 
-Conclusion
+## Conclusion
 
 By following this guide, you will know how to install Nessus on both Kali and Windows.
 
