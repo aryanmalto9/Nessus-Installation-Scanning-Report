@@ -4,6 +4,7 @@ The Nessus Installation & Scanning Report
 
 BY: S Aryan Malto 
 DATE: 28-04-2026
+
 https://medium.com/@aryanmalto9/nessus-installation-configuration-9d8ab0582631?sharedUserId=aryanmalto9
 
 Nessus is a powerful tool from Tenable that can scan networks, operating systems, databases and applications for vulnerabilities.
