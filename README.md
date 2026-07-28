@@ -1,6 +1,6 @@
-# Nessus-Installation-Scanning-Report
+# Nessus Installation & Configuration
 
-The Nessus Installation & Scanning Report
+The Nessus Installation
 
 BY: S Aryan Malto 
 
